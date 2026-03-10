@@ -25,7 +25,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 315069654700.dkr.ecr.us-east-1.amazonaws.com/expense-frontend:{{ .Values.deployment.imageVersion }}
+        #image: 315069654700.dkr.ecr.us-east-1.amazonaws.com/expense-frontend:{{ .Values.deployment.imageVersion }}
+        image: 247018008061.dkr.ecr.us-east-1.amazonaws.com/expense-frontend:{{ .Values.deployment.imageVersion }}
         volumeMounts:
         - name: nginx-conf
           mountPath: /etc/nginx/nginx.conf
